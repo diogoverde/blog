@@ -22,7 +22,7 @@ export const Layout: React.FC = ({ children }) => {
       </Head>
       <Header />
 
-      <main className="flex flex-col items-center justify-center min-h-screen py-2">
+      <main className="flex flex-col items-center justify-center  py-2">
         <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
           {children}
         </div>
