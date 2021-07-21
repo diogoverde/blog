@@ -1,6 +1,3 @@
-import Image from "next/image";
-import tailwindLogo from "../public/logos/tailwindcss-logo.svg";
-
 export default function Footer() {
   return (
     <footer className="max-w-4xl px-4 mx-auto text-gray-800">

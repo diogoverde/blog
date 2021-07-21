@@ -5,7 +5,6 @@ import Header from "./Header";
 const meta = {
   title: "Diogo Verde – Developer",
   description: ``,
-  image: "https://leerob.io/static/images/banner.png",
   type: "website",
 };
 
