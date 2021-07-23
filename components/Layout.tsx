@@ -1,6 +1,8 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import { useTheme } from "next-themes";
 
 const meta = {
   title: "Diogo Verde – Developer",
@@ -9,8 +11,13 @@ const meta = {
 };
 
 export const Layout: React.FC = ({ children }) => {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+
+  const { resolvedTheme, setTheme } = useTheme();
+
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-700 h-screen">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
