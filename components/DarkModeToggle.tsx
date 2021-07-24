@@ -11,7 +11,7 @@ export default function DarkModeToggle() {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-800"
+      className="w-10 h-10 p-3 bg-gray-400 rounded dark:bg-gray-800"
       onClick={() => {
         console.log(resolvedTheme);
         return setTheme(resolvedTheme === "dark" ? "light" : "dark");
@@ -23,7 +23,7 @@ export default function DarkModeToggle() {
           viewBox="0 0 24 24"
           fill="currentColor"
           stroke="currentColor"
-          className="w-4 h-4 text-gray-800 dark:text-gray-200"
+          className="w-4 h-4 text-yellow-200 dark:text-yellow-200 "
         >
           {resolvedTheme === "dark" ? (
             <path
