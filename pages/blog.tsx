@@ -1,6 +1,7 @@
-import { Layout } from "../components/Layout";
-import { getAllFilesFrontMatter } from "../lib/mdx";
+import { Layout } from "@/components/Layout";
+import { getAllPostsMeta } from "@/lib/mdx";
 import Link from "next/link";
+import { BlogPostMeta } from "types/blogpost";
 
 export default function Blog({ posts }: any) {
   return (
@@ -24,9 +25,9 @@ export default function Blog({ posts }: any) {
         <span className="text-2xl font-bold underline">
           There are <span className="text-blue-400">{posts.length}</span> posts
         </span>
-        {posts.map((post: any) => {
+        {posts.map((post: BlogPostMeta) => {
           return (
-            <Link key={post.title} href={`/blog/`}>
+            <Link key={post.title} href={`/blog/${post.slug}`}>
               <a className="w-full">
                 <div className="mb-8 w-full">
                   <div className="flex flex-col md:flex-row justify-between">
@@ -48,7 +49,7 @@ export default function Blog({ posts }: any) {
 }
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter("blog");
+  const posts = await getAllPostsMeta();
 
   return { props: { posts } };
 }
