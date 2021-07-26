@@ -7,6 +7,8 @@ export type BlogPostMeta = {
   slug?: any;
   image?: string;
   summary?: string;
+  by?: string;
+  avatar?: string;
 };
 
 export type BlogPost = {

@@ -45,8 +45,13 @@ class MyDocument extends Document {
             rel="android-chrome"
             sizes="512x512"
           />
+          <script
+            defer
+            data-domain="diogoverde.com"
+            src="https://plausible.io/js/plausible.js"
+          ></script>
         </Head>
-        <body className="bg-white dark:bg-gray-800 text-white dark:text-black">
+        <body className="bg-white dark:bg-gray-700 text-white dark:text-black">
           <Main />
           <NextScript />
         </body>
