@@ -14,8 +14,6 @@ export const Layout: React.FC = ({ children }) => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  const { resolvedTheme, setTheme } = useTheme();
-
   return (
     <div className="bg-white dark:bg-gray-700 h-screen">
       <Head>
@@ -28,7 +26,7 @@ export const Layout: React.FC = ({ children }) => {
       </Head>
       <Header />
 
-      <main className="flex flex-col justify-center text-black dark:text-white">
+      <main className="flex flex-col justify-center text-black dark:text-white px-8">
         <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
           {children}
         </div>

@@ -4,7 +4,7 @@ import DarkModeToggle from "./DarkModeToggle";
 
 export default function Header() {
   return (
-    <nav className="flex items-center justify-between w-full max-w-5xl mx-auto my-0 sticky-nav md:my-8 mt-4 bg-opacity-60 px-4">
+    <nav className="flex items-center justify-between w-full max-w-5xl mx-auto my-0 sticky-nav md:my-8 mt-4 bg-opacity-60 px-8">
       <div className="flex items-center justify-between">
         <Link href="/">
           <a>

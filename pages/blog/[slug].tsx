@@ -9,13 +9,14 @@ import { MDXRemote } from "next-mdx-remote";
 export default function PostPage({ meta, mdxSource }: BlogPost) {
   return (
     <Layout>
-      {/* <Component components={MDXComponents as any} /> */}
-      <MDXRemote
-        {...mdxSource}
-        components={{
-          ...MDXComponents,
-        }}
-      />
+      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+        <MDXRemote
+          {...mdxSource}
+          components={{
+            ...MDXComponents,
+          }}
+        />
+      </article>
     </Layout>
   );
 }

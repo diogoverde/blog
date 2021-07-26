@@ -9,7 +9,7 @@ export default function Footer() {
   const [party, setParty] = useState(false);
 
   return (
-    <footer className="max-w-5xl px-4 mx-auto text-gray-800">
+    <footer className="max-w-5xl px-8 mx-auto text-gray-800">
       <div className="pb-4 mb-2 border-t-2 border-gray-300"></div>
       <div className="flex flex-row justify-between ">
         <div></div>
