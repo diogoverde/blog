@@ -23,10 +23,10 @@ export default function PostPage({ meta, mdxSource }: BlogPost) {
         </h1>
 
         <div className="mt-2 mb-2">
-          <time className="uppercase text-xs text-gray-500 font-bold">
+          <time className="uppercase text-xs text-gray-400 font-bold">
             {format(parseISO(meta.publishedAt), "MMMM dd, yyyy")}
           </time>{" "}
-          <span className="text-xs uppercase font-bold text-gray-500">
+          <span className="text-xs uppercase font-bold text-gray-400">
             • Written by{" "}
             <a
               className="uppercase text-xs text-indigo-600 dark:text-indigo-400 font-bold hover:underline"
