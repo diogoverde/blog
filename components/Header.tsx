@@ -17,10 +17,14 @@ export default function Header() {
 
       <div className="flex items-center justify-between">
         <Link href="/">
-          <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-200">Blog</a>
+          <a className="font-bold tracking-tight p-1 text-gray-900 sm:p-4 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">
+            Blog
+          </a>
         </Link>
         <Link href="/about">
-          <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-200">About</a>
+          <a className="font-bold tracking-tight p-1 text-gray-900 sm:p-4 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">
+            About
+          </a>
         </Link>
         <DarkModeToggle />
       </div>

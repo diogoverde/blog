@@ -7,20 +7,23 @@ export default function Blog({ posts }: any) {
   return (
     <Layout>
       <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-        Hey, I&apos;m Diogo!
+        👋 I&apos;m Diogo!
       </h1>
       <h4 className="mb-4 text-xl">
-        Welcome to my small piece of the internet where I write about JavaScript
-        mostly and all of it&apos;s stack.
+        Welcome to my small piece on the internet where I write about building
+        my side projects with JavaScript and Go!
       </h4>
       <div className="w-full">
         <p className="text-3xl font-bold underline">Blog Posts</p>
         {posts.map((post: BlogPostMeta) => {
           return (
-            <div key={post.title} className="w-full hover:bg-gray-600">
+            <div
+              key={post.slug}
+              className="w-full hover:bg-gray-200 dark:hover:bg-gray-600"
+            >
               <Link href={`/blog/${post.slug}`}>
                 <a className="w-full">
-                  <time className="uppercase text-xs text-gray-500 font-bold">
+                  <time className="uppercase text-xs text-gray-400 dark:text-gray-500 font-bold">
                     {post.publishedAt}
                   </time>
                   <div className="mb-4 w-full">
