@@ -10,16 +10,15 @@ export default function Blog({ metas }: any) {
       <div className="flex justify-between">
         <div className="animate-wiggle  text-4xl">👋</div>
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white ">
-          <span>I&apos;m Diogo!</span>
+          <span>Hey, I&apos;m Diogo!</span>
         </h1>
       </div>
-
       <h4 className="mb-4 text-xl">
         Welcome to my small piece on the internet where I write about building
         my side projects with JavaScript and Go!
       </h4>
       <div className="w-full">
-        <p className="text-3xl font-bold underline  ">Blog Posts</p>
+        <p className="text-3xl font-bold underline">Blog Posts</p>
         {metas.map((postMeta: BlogPostMeta) => {
           return (
             <div

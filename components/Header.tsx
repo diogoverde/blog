@@ -16,16 +16,16 @@ export default function Header() {
       </div>
 
       <div className="flex items-center justify-between">
-        <Link href="/">
+        {/* <Link href="/">
           <a className="font-bold tracking-tight p-1 text-gray-900 sm:p-4 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">
             Blog
           </a>
-        </Link>
-        <Link href="/about">
+        </Link> */}
+        {/* <Link href="/about">
           <a className="font-bold tracking-tight p-1 text-gray-900 sm:p-4 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">
             About
           </a>
-        </Link>
+        </Link> */}
         <DarkModeToggle />
       </div>
     </nav>

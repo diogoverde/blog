@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 const meta = {
-  title: "Diogo Verde – Developer",
+  title: "Diogo Verde | Developer",
   description: ``,
   type: "website",
 };
