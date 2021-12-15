@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -11,7 +10,7 @@ const meta = {
 
 export const Layout: React.FC = ({ children }) => {
   return (
-    <div className="bg-white dark:bg-gray-700 h-screen">
+    <div className="bg-white dark:bg-gray-900 h-screen">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />

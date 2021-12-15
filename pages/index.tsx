@@ -14,17 +14,13 @@ export default function Blog({ metas }: any) {
         </h1>
       </div>
       <h4 className="mb-4 text-xl">
-        Welcome to my small piece on the internet where I write about building
-        my side projects with JavaScript and Go!
+        Welcome to my little garden on the internet.
       </h4>
       <div className="w-full">
         <p className="text-3xl font-bold underline">Blog Posts</p>
         {metas.map((postMeta: BlogPostMeta) => {
           return (
-            <div
-              key={postMeta.slug}
-              className="w-full hover:bg-gray-200 dark:hover:bg-gray-600"
-            >
+            <div key={postMeta.slug} className="w-full">
               <Link href={`/blog/${postMeta.slug}`}>
                 <a className="w-full">
                   <div className="mb-4 w-full">
