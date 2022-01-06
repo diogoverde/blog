@@ -46,9 +46,10 @@ class MyDocument extends Document {
             sizes="512x512"
           />
           <script
+            async
             defer
-            data-domain="diogoverde.com"
-            src="https://plausible.io/js/plausible.js"
+            data-website-id="39181778-2afd-4c58-97e1-053eb01d4759"
+            src="https://umami-analytics-qbmrqlmkk-diogoverde.vercel.app/umami.js"
           ></script>
         </Head>
         <body className="bg-white text-white dark:text-black">
